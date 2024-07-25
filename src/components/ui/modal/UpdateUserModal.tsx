@@ -40,6 +40,9 @@ function UpdateUserModal({ isOpen, close, reload,detail}:any) {
         });
         close();
       } catch (err) {
+        toast.error('Error : User could not be updated', {
+          position: "bottom-right"
+        });
         console.log(err);
       }
       reload();

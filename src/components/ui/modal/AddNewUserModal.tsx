@@ -42,6 +42,9 @@ function AddNewUserModal({ isOpen, close, reload }:any) {
         });
         close();
       } catch (err) {
+        toast.error('Error : User could not be added', {
+          position: "bottom-right"
+        });
         console.log(err);
       }
       reload();
