@@ -70,10 +70,10 @@ const Sidebar =  ({ setIsSidebarOpen }: SidebarProps) => {
           </li>
         ))}
       </ul>
-      <div className=" mb-[80px] flex mx-[20px] items-center border-2 border-black rounded-[5[px]">
+      {/* <div className=" mb-[80px] flex mx-[20px] items-center border-2 border-black rounded-[5[px]">
         <MdLogout size={20} />
         <div className="ml-[20px]">Back to Dashboard</div>
-      </div>
+      </div> */}
     </div>
   );
 };
