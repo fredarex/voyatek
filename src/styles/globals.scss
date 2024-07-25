@@ -1,0 +1,92 @@
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+  
+  @layer utilities {
+    .container {
+      @apply w-full  pt-[88px] mt-6 px-6 max-w-full h-full min-h-screen
+    }
+  
+    .check-box { 
+      @apply  bg-p800 text-white
+    }
+    
+    .btn {
+      @apply py-4 px-4 bg-secondary hover:bg-opacity-70 rounded-[30px] text-white text-lg font-semibold;
+    }
+    
+    .table-text{
+      @apply text-n500 text-sm font-normal
+    }
+
+    .head-text {
+      @apply mt-4 text-6xl leading-[72px] font-bold tracking-[-1.2px] text-gray-900;
+    }
+  
+    .header-three {
+      @apply text-[32px] font-semibold
+    }
+  
+    .header-four{
+      @apply text-2xl  font-semibold
+    }
+  
+    .header-five {
+      @apply text-[20px] font-semibold
+    }
+  
+    .header-six {
+      @apply text-lg font-semibold
+    }
+  
+    .body-two{
+      @apply text-[16px]  font-normal
+    }
+  
+    .body-three {
+      @apply text-sm font-normal
+    }
+  
+    .caption-one{
+      @apply text-sm font-medium
+    }
+  
+    .caption-two{
+      @apply text-xs font-normal
+    }
+  
+    .subtitle-one {
+      @apply text-[16px] font-semibold
+    }
+  
+    .subtitle-two {
+      @apply text-sm  font-semibold
+    }
+  
+    .subtitle-three {
+      @apply text-xs text-n900 font-normal
+    }
+  
+    .centralize-all-col {
+      @apply flex flex-col items-center justify-center
+    }
+  
+    .centralize-all-row {
+      @apply flex flex-row items-center justify-center
+    }
+  
+
+    .section-text {
+      @apply text-secondary text-[32px] font-semibold;
+    }
+  
+    .small-text {
+      @apply flex gap-2 text-sm font-normal text-n600;
+    }
+  
+    .paragraph-text {
+      @apply text-xl leading-[30px] text-gray-600;
+    }
+
+    
+  }
