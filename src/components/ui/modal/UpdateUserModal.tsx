@@ -72,27 +72,27 @@ function UpdateUserModal({ isOpen, close, reload,detail}:any) {
                     <div className="flex justify-between w-full h-full p-[20px] rounded-[12px] ">
                       <div className='w-full'>
                         <div className='w-full'>
-                          <div className='mb-[8px]'>Email Address <span>*</span></div>
+                          <div className='mb-[8px]'>Email Address</div>
                           <div className='mb-[10px] w-full bg-white h-[40px] rounded-[8px] border border-[#e0dfdf]'>
                             <input placeholder='New User Email Address' className='w-full h-full rounded-[12px] px-[10px] outline-none border-none' value={email} onChange={(e) => setEmail(e.target.value)} />
                           </div>
                         </div>
                         <div className='w-full'>
 
-                          <div className='mb-[8px]'>Full Name <span>*</span></div>
+                          <div className='mb-[8px]'>Full Name</div>
                           <div className='mb-[10px] w-full bg-white h-[40px] rounded-[8px] border border-[#e0dfdf]'>
                             <input placeholder='New User Full Name' className='w-full h-full rounded-[12px] px-[10px] outline-none border-none' value={Name} onChange={(e) => setName(e.target.value)} />
                           </div>
                         </div>
 
                         <div className='w-full'>
-                          <div className='mb-[8px]'>Role <span>*</span></div>
+                          <div className='mb-[8px]'>Role</div>
                           <div className='mb-[10px] w-full bg-white h-[40px] rounded-[8px] border border-[#e0dfdf]'>
                             <input placeholder='Role' className='w-full h-full rounded-[12px] px-[10px] outline-none border-none' value={role} onChange={(e) => setRole(e.target.value)} />
                           </div>
                         </div>
                         <div className='w-full'>
-                          <div className='mb-[8px]'>Password<span>*</span></div>
+                          <div className='mb-[8px]'>Password</div>
                           <div className='mb-[10px] w-full bg-white h-[40px] rounded-[8px] border border-[#e0dfdf]'>
                             <input placeholder='Password' className='w-full h-full rounded-[12px] px-[10px] outline-none border-none' value={password} onChange={(e) => setPassword(e.target.value)} />
                           </div>

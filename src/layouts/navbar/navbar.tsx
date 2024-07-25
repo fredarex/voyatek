@@ -41,7 +41,7 @@ const Navbar: FC<NavbarProps> = ({ isSidebarOpen, setIsSidebarOpen }) => {
   }
 
   return (
-    <div className="h-[100px] flex items-center justify-between border-b-[0.5px] border-n400 z-50">
+    <div className="h-full flex items-center justify-between border-b-[0.5px] border-n400 z-50">
       <div className="md:w-[25rem] flex items-center justify-start space-x-2">
         <Menu className="text-black md:hidden -mt-1" size={30} onClick={handleSidebarToggle} />
         <div className="flex items-center md:gap-[20px] md:w-[17.68rem]" >
