@@ -25,7 +25,7 @@ const menuItems = [
       {
         title: "Account",
         path: "/settings/users",
-        image: <GoPerson color="#94A3B8" size={20} />,
+        image: <GoPerson  color="#94A3B8" size={20} />,
         imageActive: <GoPerson color="#0D6EFD" size={20} />
       },
       {

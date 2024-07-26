@@ -42,7 +42,7 @@ const Navbar: FC<NavbarProps> = ({ isSidebarOpen, setIsSidebarOpen }) => {
 
   return (
     <div className="h-full flex items-center justify-between border-b-[0.5px] border-n400 z-50">
-      <div className="md:w-[25rem] flex items-center justify-start space-x-2">
+      <div className="md:w-[25rem] h-full flex items-center justify-start space-x-2">
         <Menu className="text-black md:hidden -mt-1" size={30} onClick={handleSidebarToggle} />
         <div className="flex items-center md:gap-[20px] md:w-[17.68rem]" >
           <Image
@@ -55,7 +55,7 @@ const Navbar: FC<NavbarProps> = ({ isSidebarOpen, setIsSidebarOpen }) => {
         </div>
       </div>
 
-      <div className="w-full flex items-center justify-end md:justify-between">
+      <div className="w-full h-full flex items-center justify-end md:justify-between">
         <div className="w-full hidden md:block">
           <div>
             <div className=' ml-[20px] bg-[#f0f2f5] w-[150px] md:w-[336px] px-[18px] border border-[#E2E8F0] rounded-[5px] h-[40px] flex justify-between items-center'>

@@ -43,7 +43,10 @@ const MenuLink: FC<MenuLinkProps> = ({ item, setIsSidebarOpen }) => {
         }
        
       {/* </span> */}
-      <p className={`${sanitizedPathname === item.path ? 'text-[14px] text-[#94A3B8] font-normal' : 'text-[14px] text-[#94A3B8]  font-normal'} pl-[10px]`}>{item.title}</p>
+      <div className="ml-[10px]">
+        <p className={`${sanitizedPathname === item.path ? 'text-[14px] text-[#94A3B8] font-normal' : 'text-[14px] text-[#94A3B8]  font-normal'} pl-[10px]`}>{item.title}</p>
+      </div>
+      
     </Link>
   );
 };
