@@ -40,7 +40,9 @@ function AddNewUserModal({ isOpen, close, reload }:any) {
         toast.success('User successfully added', {
           position: "bottom-right"
         });
+        window.location.reload();
         close();
+        
       } catch (err) {
         console.log(err);
       }

@@ -70,7 +70,7 @@ const Navbar: FC<NavbarProps> = ({ isSidebarOpen, setIsSidebarOpen }) => {
         </div>
         <div className="flex justify-end items-center gap-5">
           <div className="flex items-center space-x-6">
-            <div className="flex flex-col justify-center items-center mr-[30px]">
+            <div className="flex flex-col justify-center items-center mx-[30px]">
               <Bell color='#110D0C' size={20} />
               <div className="text-center">notifications</div>
             </div>
@@ -82,8 +82,8 @@ const Navbar: FC<NavbarProps> = ({ isSidebarOpen, setIsSidebarOpen }) => {
             </div>
 
 
-            <div className="flex flex-col justify-center items-center px-[10px]">
-                <Image alt="" src={person} width={100} height={100} />
+            <div className="flex flex-col justify-center items-center px-[10px] ">
+              <Image alt="" src={person} width={100} height={100} />
             </div>
             
           </div>

@@ -21,7 +21,7 @@ const Providers = ({children}: { children: ReactNode }) => {
       })}>
         <Sidebar setIsSidebarOpen={setIsSidebarOpen} />
       </div>
-      <div className=" fixed top-0 w-full min-h-[89px]  bg-white  z-50 px-[20px] ">
+      <div className=" fixed top-0 w-full h-[89px]  bg-white  z-50 px-[20px] ">
         <Navbar isSidebarOpen = {isSidebarOpen} setIsSidebarOpen={setIsSidebarOpen}/>
       </div>
       <div className={cn(`w-full`,{

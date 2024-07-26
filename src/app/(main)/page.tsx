@@ -17,7 +17,9 @@ const mapState = (state: any) => ({
 });
 
 function Dashboard() {
+  
   const { allusers } = useSelector(mapState);
+  console.log(allusers);
   const [rowId, setRowId] = useState(null);
   const [openAddModal, setOpenAddModal] = useState(false);
   const [openUpdateModal, setOpenUpdateModal] = useState(false);
@@ -54,7 +56,7 @@ function Dashboard() {
     }
 
 
-  }, [pageState.page]);
+  }, [pageState.page,allusers]);
 
   const reloadData = async () => {
     setReload(!reload);
@@ -155,7 +157,7 @@ function Dashboard() {
         }
         
         {
-          (allusers.length == 0 && tabId == 1) && <EmptyData message={"No User Data"} />
+          (allusers?.length == 0 && tabId == 1) && <EmptyData message={"No User Data"} />
         }
 
       </div>

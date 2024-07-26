@@ -4,9 +4,9 @@ import { RootState } from "@/store";
 import { useAppSelector } from "./useTypedSelector";
 
 const useGlobalState = () => {
-  const user = useAppSelector((state: RootState) => state.user);
+  const email = useAppSelector((state: RootState) => state.auth.email);
 
-  return { user };
+  return { email };
 };
 
 export default useGlobalState;
