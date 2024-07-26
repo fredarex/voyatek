@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 
 export function middleware(req: NextRequest) {
-  const cookie = req.cookies.get("authData")
+  const cookie = req.cookies.get("userData")
   const cookieValue = cookie?.value;
   let isLoggedIn = false
 
@@ -18,5 +18,5 @@ export function middleware(req: NextRequest) {
 }
 
 export const config = {
-  matcher: '/dashboard/:path*'
+  matcher: '/:path*'
 }
