@@ -56,7 +56,7 @@ function Dashboard() {
     }
 
 
-  }, [pageState.page,allusers]);
+  }, [pageState.page]);
 
   const reloadData = async () => {
     setReload(!reload);
