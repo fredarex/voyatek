@@ -25,7 +25,7 @@ const menuItems = [
       {
         title: "Account",
         path: "/settings/users",
-        image: <GoPerson  color="#94A3B8" size={20} />,
+        image: <GoPerson color="#94A3B8" size={20} />,
         imageActive: <GoPerson color="#0D6EFD" size={20} />
       },
       {
@@ -57,9 +57,9 @@ interface SidebarProps {
 
 const Sidebar =  ({ setIsSidebarOpen }: SidebarProps) => {
   return (
-    <div className={cn("sticky top-10 h-[100dvh]")}>
+    <div className={"sticky w-full top-10 h-[100dvh]"}>
       
-      <ul className={`list-none mt-24`}>
+      <ul className={`list-none mt-24 h-full`}>
         
         {menuItems.map((cat) => (
           <li key={cat.title}>
@@ -70,7 +70,7 @@ const Sidebar =  ({ setIsSidebarOpen }: SidebarProps) => {
           </li>
         ))}
       </ul>
-      {/* <div className=" mb-[80px] flex mx-[20px] items-center border-2 border-black rounded-[5[px]">
+      {/* <div className=" bg-red-800 w-full flex mt-2 h-full items-end border-2 border-black rounded-[5px]">
         <MdLogout size={20} />
         <div className="ml-[20px]">Back to Dashboard</div>
       </div> */}

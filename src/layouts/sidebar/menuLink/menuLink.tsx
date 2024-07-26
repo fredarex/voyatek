@@ -29,25 +29,25 @@ const MenuLink: FC<MenuLinkProps> = ({ item, setIsSidebarOpen }) => {
   }
   
   return (
-    <Link
-      href={item.path}
+    <div
+     
       className={`h-[40px] px-4 w-full flex items-center  my-[5px] space-x-3 hover:bg-[#F3FCFC] ${
         sanitizedPathname === item.path && 'bg-[#F3FCFC] border border-l-[3px] border-transparent border-l-primary'
       }`}
       onClick={handleCloseSidebar}
     >
        {/* <span className={`text-lg ${pathname === item.path ? 'text-p800 ' : 'text-n900'}`}> */}
-        {
+       <div className='mr-2'>
+       {
           sanitizedPathname == item.path ?
           item.imageActive : item.image
         }
+       </div>
+        
        
       {/* </span> */}
-      <div className="ml-[10px]">
-        <p className={`${sanitizedPathname === item.path ? 'text-[14px] text-[#94A3B8] font-normal' : 'text-[14px] text-[#94A3B8]  font-normal'} pl-[10px]`}>{item.title}</p>
-      </div>
-      
-    </Link>
+      <div className={`text-[14px] text-[#94A3B8] ml-[10px] font-normal`}>{item.title}</div>
+    </div>
   );
 };
 
